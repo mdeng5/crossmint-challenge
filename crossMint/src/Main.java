@@ -22,8 +22,12 @@ public class Main {
         Main main = new Main();
         main.setup();
 
-        main.fillWithGoalMap();
-//        main.clearBoard();
+        if (args[0].equals("clear")) {
+            main.clearBoard();
+        }
+        if (args[0].equals("fill")) {
+            main.fillWithGoalMap();
+        }
     }
 
     public void fillWithGoalMap() {
